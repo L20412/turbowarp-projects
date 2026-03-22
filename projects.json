@@ -3,28 +3,24 @@
     {
       "title": "[P] HeroNet Desktop",
       "link": "https://turbowarp.org/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/turbowarp/izukupc.sb3",
-      "thumbnail": "images/heronet.png"
+      "thumbnail": "tb/heronet.png"
     }
   ],
   "turbowarp": [
     {
       "title": "[P] HeroNet Desktop",
       "link": "https://turbowarp.org/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/turbowarp/izukupc.sb3",
-      "thumbnail": "images/heronet.png",
-      "extra": {
-        "label": "Penguinmod version",
-        "link": "https://studio.penguinmod.com/#4107861880"
-      }
+      "thumbnail": "tb/heronet.png"
     },
     {
       "title": "[G] Business Tycoon",
       "link": "https://turbowarp.org/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/turbowarp/businesstycoon.sb3",
-      "thumbnail": "images/business.png"
+      "thumbnail": "tb/businesstycoon.png"
     },
     {
       "title": "[A] Looping the rooms",
       "link": "https://turbowarp.org/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/turbowarp/loopingtherooms.sb3",
-      "thumbnail": "images/business.png"
+      "thumbnail": "tb/loopingtherooms.png"
     }
   ],
   "penguinmod": []
