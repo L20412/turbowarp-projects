@@ -33,5 +33,11 @@
       "thumbnail": "tb/loopingtherooms.png"
     }
   ],
-  "penguinmod": []
+  "penguinmod": [
+    {
+      "title": "[P] YTD",
+      "link": "https://studio.penguinmod.com/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/penguinmod/ytd.pmp",
+      "thumbnail": "tb/loopingtherooms.png"
+    }
+  ]
 }
