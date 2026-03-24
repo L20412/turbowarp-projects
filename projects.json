@@ -1,12 +1,22 @@
 {
   "pinned": [
     {
+      "title": "[G] Whack-a-Dango",
+      "link": "https://turbowarp.org/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/turbowarp/whackadango.sb3",
+      "thumbnail": "tb/loopingtherooms.png"
+    },
+    {
       "title": "[P] HeroNet Desktop",
       "link": "https://turbowarp.org/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/turbowarp/izukupc.sb3",
       "thumbnail": "tb/heronet.png"
     }
   ],
   "turbowarp": [
+    {
+      "title": "[G] Whack-a-Dango",
+      "link": "https://turbowarp.org/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/turbowarp/whackadango.sb3",
+      "thumbnail": "tb/loopingtherooms.png"
+    },
     {
       "title": "[P] HeroNet Desktop",
       "link": "https://turbowarp.org/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/turbowarp/izukupc.sb3",
