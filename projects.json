@@ -43,7 +43,8 @@
   "others": [
     {
       "title": "[P] Windows 10 vector",
-      "link": "https://studio.penguinmod.com/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/penguinmod/win10vector.pmp"
+      "link": "https://studio.penguinmod.com/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/penguinmod/win10vector.pmp",
+      "thumbnail": "tb/win10vector.png"
     }
   ]
 }
