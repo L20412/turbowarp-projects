@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <title>L20412 Projects</title>
-
 <style>
 body { margin:0; font-family:Arial; background:#212121;color:white }
 header { background: #ff4c4c; color:white; padding:15px 25px; font-weight:bold; }
@@ -67,10 +66,6 @@ h2 { margin-bottom:10px; }
 However, Google just announced that starting in 2026/2027, they will force all Android app developers to submit personal identity details directly to them—even for apps outside the Play Store. This destroys developer privacy and independent ecosystems like F-Droid. I don't host APKs here, but corporate gatekeeping affects us all, so I’m spreading the word anyway. <a href="//ricktree.free.nf/keepandroidopen/">Learn more...</a>
 </h3>
 
-<h1>What's going on?</h1>
-<h3>In August 2025, Google <a href="https://developer.android.com/developer-verification">announced</a> that starting <b>September 30, 2026</b>, every Android app developer must register centrally with Google before their software can be installed on a GMS-certified Android device. <strong>Not just Play Store apps: all apps</strong>. This mandate will pilot first in Brazil, Indonesia, Singapore, and Thailand in late 2026, before expanding globally in 2027. I consider this the darkest change in Android's history.</h3>
-
-
 <h2>📌 Pinned</h2>
 <div id="pinned" class="scroll-container"></div>
 </div>
@@ -133,3 +128,149 @@ fetch("projects.json")
 
 </body>
 </html>
+
+
+
+<script>
+    /**
+ * DROIDWARN: Help Keep Android Open!
+ * 
+ * Yes, this code has absolutely nothing to do with Android.
+ * However, Google is forcing Android app developers to submit personal
+ * identity details directly to them—even for apps outside the Play Store. 
+ * This destroys developer privacy and independent ecosystems like F-Droid.
+ * 
+ * More info can be found at https://ricktree.free.nf/keepandroidopen
+ */
+
+const CONFIRMATION_PHRASE = "Yes, I understand, Keep Android Open!";
+
+// Helper to check the environment
+const isNode = typeof process !== 'undefined' && process.release && process.release.name === 'node';
+const isBrowser = typeof window !== 'undefined' && typeof window.document !== 'undefined';
+
+function droidwarn(interactive = true, dependency = false) {
+    if (isNode) {
+        runNodeWarning(interactive, dependency);
+    } else if (isBrowser) {
+        runBrowserWarning(interactive, dependency);
+    }
+}
+
+// ==========================================
+// 💻 NODE.JS TERMINAL IMPLEMENTATION
+// ==========================================
+function runNodeWarning(interactive, dependency) {
+    console.log("huh? this isn't Node.js?!")
+}
+
+// ==========================================
+// 🌐 BROWSER/HTML IMPLEMENTATION
+// ==========================================
+function runBrowserWarning(interactive, dependency) {
+    if (dependency) {
+        console.warn(
+            "🚨 Tech Freedom Alert: Google is centralizing Android app distribution starting late 2026, threatening open-source ecosystems like F-Droid. Learn more: https://keepandroidopen.org"
+        );
+        return;
+    }
+
+    if (!interactive) return;
+
+    // Create a full-screen blocking overlay using pure JS DOM manipulation
+    const overlay = document.createElement('div');
+    overlay.id = 'droidwarn-overlay';
+    overlay.style.position = 'fixed';
+    overlay.style.top = '0';
+    overlay.style.left = '0';
+    overlay.style.width = '100vw';
+    overlay.style.height = '100vh';
+    overlay.style.backgroundColor = '#111';
+    overlay.style.color = '#fff';
+    overlay.style.zIndex = '999999';
+    overlay.style.display = 'flex';
+    overlay.style.flexDirection = 'column';
+    overlay.style.justifyContent = 'center';
+    overlay.style.alignItems = 'center';
+    overlay.style.fontFamily = 'sans-serif';
+    overlay.style.padding = '20px';
+    overlay.style.boxSizing = 'border-box';
+    overlay.style.textAlign = 'center';
+
+    overlay.innerHTML = `
+        <div style="max-width: 600px; line-height: 1.6;">
+            <h1 style="color: #ffcc00; font-size: 2.5rem; margin-bottom: 20px;">🚨 Tech Freedom Alert</h1>
+            <p style="font-size: 1.1rem; margin-bottom: 20px;">
+                Google is centralizing Android app distribution via identity verification starting late 2026, 
+                threatening open-source ecosystems like F-Droid. Even if this project isn't an Android app, 
+                corporate gatekeeping affects all software freedom.
+            </p>
+            <p style="margin-bottom: 30px;">
+                👉 Learn more & take action: <a href="https://keepandroidopen.org" target="_blank" style="color: #66b2ff; text-decoration: underline;">keepandroidopen.org</a>
+            </p>
+            
+            <div style="margin-bottom: 20px;">
+                <label style="display: block; margin-bottom: 10px; font-weight: bold;">
+                    Type exactly: <span style="color: #ffcc00; background: #222; padding: 2px 6px; border-radius: 4px; font-family: monospace;">${CONFIRMATION_PHRASE}</span>
+                </label>
+                <input type="text" id="droidwarn-input" autocomplete="off" placeholder="Type response here..." style="width: 100%; padding: 12px; font-size: 1rem; border: 2px solid #555; border-radius: 6px; background: #222; color: #fff; text-align: center; box-sizing: border-box;" />
+            </div>
+            
+            <button id="droidwarn-submit" style="background: #ffcc00; color: #000; border: none; padding: 12px 30px; font-size: 1rem; font-weight: bold; border-radius: 6px; cursor: pointer; width: 100%;">
+                I Understand & Wish to Proceed
+            </button>
+            <p id="droidwarn-error" style="color: #ff4444; margin-top: 15px; min-height: 24px; font-weight: bold;"></p>
+        </div>
+    `;
+
+    // Wait until document body is available, then inject
+    if (document.body) {
+        document.body.appendChild(overlay);
+        setupBrowserEvents();
+    } else {
+        document.addEventListener('DOMContentLoaded', () => {
+            document.body.appendChild(overlay);
+            setupBrowserEvents();
+        });
+    }
+
+    function setupBrowserEvents() {
+        const inputField = document.getElementById('droidwarn-input');
+        const submitBtn = document.getElementById('droidwarn-submit');
+        const errorText = document.getElementById('droidwarn-error');
+
+        // Prevent users from easily tabbing or clicking out of the modal
+        document.body.style.overflow = 'hidden';
+
+        function checkSubmission() {
+            if (inputField.value === CONFIRMATION_PHRASE) {
+                // Remove overlay and restore page scrolling
+                overlay.remove();
+                document.body.style.overflow = '';
+            } else {
+                errorText.innerText = "Please type the phrase exactly (it is case-sensitive!)";
+                submitBtn.disabled = true;
+                submitBtn.style.opacity = '0.5';
+                
+                // 3-second UI penalty lock
+                setTimeout(() => {
+                    errorText.innerText = "";
+                    submitBtn.disabled = false;
+                    submitBtn.style.opacity = '1';
+                }, 3000);
+            }
+        }
+
+        submitBtn.addEventListener('click', checkSubmission);
+        inputField.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' && !submitBtn.disabled) {
+                checkSubmission();
+            }
+        });
+    }
+}
+
+// Run the script instantly
+droidwarn(true, false);
+
+</script>
