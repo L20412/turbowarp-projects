@@ -10,3 +10,5 @@ However, Google just announced that starting in 2026/2027, they will force all A
 
 <h1>Why are you so urgent about this when this repo is unrelated to Android?
 <h3>Because I value freedom, Google don't.</h3>
+
+<h1>This is a place where I store my github content</h1>

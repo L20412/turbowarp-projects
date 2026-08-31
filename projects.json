@@ -6,9 +6,9 @@
       "thumbnail": "tb/whackadango.png"
     },
     {
-      "title": "[P] HeroNet Desktop",
-      "link": "https://turbowarp.org/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/turbowarp/izukupc.sb3",
-      "thumbnail": "tb/heronet.png"
+      "title": "[G] Business Tycoon",
+      "link": "https://turbowarp.org/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/turbowarp/businesstycoon.sb3",
+      "thumbnail": "tb/businesstycoon.png"
     }
   ],
   "turbowarp": [
@@ -16,11 +16,6 @@
       "title": "[G] Whack-a-Dango",
       "link": "https://turbowarp.org/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/turbowarp/whackadango.sb3",
       "thumbnail": "tb/whackadango.png"
-    },
-    {
-      "title": "[P] HeroNet Desktop",
-      "link": "https://turbowarp.org/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/turbowarp/izukupc.sb3",
-      "thumbnail": "tb/heronet.png"
     },
     {
       "title": "[G] Business Tycoon",
@@ -47,7 +42,7 @@
       "thumbnail": "tb/win10vector.png"
     },
     {
-      "title": "[G] Touch Grass",
+      "title": "[G] Touch Grass Simulator",
       "link": "https://studio.penguinmod.com/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/penguinmod/touchgrasssimulatorv6.pmp",
       "thumbnail": "tb/touchgrasssimulatorv6.png"
     }
