@@ -9,21 +9,21 @@
     "available_urls": {
       "turbowarp": "https://turbowarp.org/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/turbowarp/whackadango.sb3",
       "penguinmod": "https://studio.penguinmod.com/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/turbowarp/whackadango.sb3",
-      "snail": "https://snail-ide.js.org/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/turbowarp/whackadango.sb3",
+      "snail": "",
       "compiled": ""
     }
   },
   {
     "id": 2,
     "name": "Business Tycoon",
-    "description": "placeholder description",
+    "description": "Welcome to the most relatable tech‑company survival sim you didn’t know you needed. \nBuild software, hire staff, manage expenses, and try to keep your company alive for as many days as possible — because in this world, your real score isn’t money… it’s survival.",
     "category": "turbowarp",
     "thumbnail": "tb/businesstycoon.png",
     "pinned": true,
     "available_urls": {
       "turbowarp": "https://turbowarp.org/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/turbowarp/businesstycoon.sb3",
       "penguinmod": "https://studio.penguinmod.com/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/turbowarp/businesstycoon.sb3",
-      "snail": "https://snail-ide.js.org/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/turbowarp/businesstycoon.sb3",
+      "snail": "",
       "compiled": ""
     }
   },
@@ -37,7 +37,7 @@
     "available_urls": {
       "turbowarp": "https://turbowarp.org/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/turbowarp/loopingtherooms.sb3",
       "penguinmod": "https://studio.penguinmod.com/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/turbowarp/loopingtherooms.sb3",
-      "snail": "https://snail-ide.js.org/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/turbowarp/loopingtherooms.sb3",
+      "snail": "",
       "compiled": ""
     }
   },
@@ -79,6 +79,20 @@
     "available_urls": {
       "turbowarp": "",
       "penguinmod": "https://studio.penguinmod.com/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/penguinmod/touchgrasssimulatorv6.pmp",
+      "snail": "",
+      "compiled": ""
+    }
+  },
+  {
+    "id": 7,
+    "name": "Scratchet",
+    "description": "Meet Scratchet- your very own desktop companion and \n\nbest friend! It will be your very own assistant - ask you questions, know your choices, help you through your desktop and also give you advice if u need some. But the story takes a turn when you find out that it is a virus in disguise. You figure out certain clues to end up choosing one of the escape files from the two options... It's your luck that will decide that whether you will be able to escape or Scratchet will be your best friend forever.... \n(The project was removed from Scratch because it contains information that asks for PII information which won't be sent anywhere)",
+    "category": "otherpeople",
+    "thumbnail": "tb/scratchet.png",
+    "pinned": false,
+    "available_urls": {
+      "turbowarp": "",
+      "penguinmod": "https://studio.penguinmod.com/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/scratch/scratchet.sb3",
       "snail": "",
       "compiled": ""
     }
