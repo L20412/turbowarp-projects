@@ -417,8 +417,8 @@ async function loadProjects() {
                         </h3>
 
                         <p class="project-description">
-                            ${escapeHTML(project.description)}
-                        </p>
+    ${escapeHTML(truncateDescription(project.description, 20))}
+</p>
 
                     </div>
                 `;
@@ -459,6 +459,14 @@ function escapeHTML(text) {
     div.textContent = text;
 
     return div.innerHTML;
+}
+function truncateDescription(text, maxLength) {
+
+    if (text.length <= maxLength) {
+        return text;
+    }
+
+    return text.substring(0, maxLength) + "...";
 }
 
 

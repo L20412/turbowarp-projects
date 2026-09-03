@@ -72,7 +72,7 @@
   {
     "id": 6,
     "name": "Touch Grass Simulator",
-    "description": "Welcome to possibly the first only vector operating system in PenguinMod.<br>This simulator allows you to use PenguinMod inside PenguinMod, create a document, use virtualization software, and even use a Windows 7 like theme found in Settings.<br>Don't forget to :heart: and :vote: this project!<br>-<br>CHANGELOGS:<br>05/07/2025 - Added Chrome and made the lock screen wallpaper vector by hand :openhand:<br>05/10/2025 - Made Chrome and Word functional :block:.<br>05/23/2025 - Added Virtualbox and a Windows 8.1 VM :laptop:<br>05/26/2025 - Fixed bugs, and added the so-called mobile support for Word :phone: (It doesn't work :animatedfrown: )<br>06/02/2025 - Animated the thumbnail and added a MacOS Sequoia VM :laptop: (what could go possibly wrong?)<br>06/04/2025 - Added a Minimalist Aero theme in Settings :glisteningeyes:<br>12/31/2025 - Added a startup sound, Windows Server 2022, and a secret system buried within the project's costumes. Can you find it before it gets released? (hint: it belongs to a hypercasual UI game)<br>06/07/2026 - Discontinuation of the project, sorry. :penguinsad: However, a newer project is in the works! It is called Windows 10 Hybrid, and more information about that project can be found by clicking the devlog button on the message screen. See you there! :party:",
+    "description": "Welcome to possibly the first only vector operating system in PenguinMod. This simulator allows you to use PenguinMod inside PenguinMod, create a document, use virtualization software, and even use a Windows 7 like theme found in Settings.",
     "category": "otherpeople",
     "thumbnail": "tb/touchgrasssimulatorv6.png",
     "pinned": false,
