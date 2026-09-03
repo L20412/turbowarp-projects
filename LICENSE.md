@@ -2,6 +2,12 @@
 
 Source code is available for inspection through each player's **“See inside”** feature for transparency reasons.
 
+You may use this repository as a template under following terms:
+- Swap everything with "L20412" into something else (like "my projects", "[your username]'s turbowarp projects", etc.)
+- Do not include anything from `scratch`, `turbowarp` or `penguinmod` folder unless you have clear rights to do so (varies by file)
+- You may manually add more project categories.
+- Crediting is appreciated, but it's not required.
+
 While Scratch, TurboWarp, and PenguinMod use open-source engines, the projects hosted in this repository are **not all licensed under the same terms**. Each project is licensed individually as follows:
 
 ### **Creative Commons Attribution-ShareAlike 2.0 (CC BY-SA 2.0)**
