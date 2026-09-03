@@ -143,68 +143,81 @@
             font-size: 13px;
         }
 
-        /* PLAY BUTTONS */
+       /* PLAY BUTTONS */
 
-        .players {
-            padding: 25px 30px 30px;
-            border-top: 1px solid var(--border);
-        }
+.players {
+    padding: 25px 30px 30px;
+    border-top: 1px solid var(--border);
+}
 
-        .players h2 {
-            margin: 0 0 15px;
-            font-size: 21px;
-        }
+.players h2 {
+    margin: 0 0 15px;
+    font-size: 21px;
+}
 
-        .buttons {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
+.player-group {
+    margin-bottom: 20px;
+}
 
-        .play-button {
-            display: inline-block;
+.player-group:last-child {
+    margin-bottom: 0;
+}
 
-            padding: 12px 16px;
+.player-group-title {
+    margin: 0 0 10px;
+    font-size: 15px;
+    color: var(--secondary);
+}
 
-            border-radius: 7px;
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 
-            color: white;
-            text-decoration: none;
+.play-button {
+    display: inline-block;
 
-            font-weight: bold;
+    padding: 12px 16px;
 
-            transition:
-                transform 0.1s ease,
-                filter 0.1s ease;
-        }
+    border-radius: 7px;
 
-        .play-button:hover {
-            transform: translateY(-2px);
-            filter: brightness(1.1);
-        }
+    color: white;
+    text-decoration: none;
 
-        .turbowarp {
-            background: #ff4c4c;
-        }
+    font-weight: bold;
 
-        .penguinmod {
-            background: #9966ff;
-        }
+    transition:
+        transform 0.1s ease,
+        filter 0.1s ease;
+}
 
-        .snail {
-            background: #42a5f5;
-        }
+.play-button:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
 
-        .compiled {
-            background: #555;
-        }
+.turbowarp {
+    background: #ff4c4c;
+}
 
-        .disabled {
-            background: #3b3b3b;
-            color: #777;
-            cursor: not-allowed;
-            pointer-events: none;
-        }
+.penguinmod {
+    background: #9966ff;
+}
+
+.snail {
+    background: #42a5f5;
+}
+
+.compiled {
+    background: #555;
+}
+
+.unavailable-button {
+    background: #333;
+    color: #777;
+    border: 1px solid #444;
+}
 
         /* ERROR */
 
@@ -305,7 +318,7 @@ async function loadProject() {
             return;
         }
 
-        document.title = `${project.name} - L20412`;
+        document.title = `${project.name} - L20412's TurboWarp projects`;
 
         const thumbnail = project.thumbnail
             ? `
@@ -356,35 +369,13 @@ async function loadProject() {
 
                 <section class="players">
 
-                    <h2>Play this project</h2>
+    <h2>Play this project</h2>
 
-                    <div class="buttons">
+    <div id="available-players"></div>
 
-                        ${createButton(
-                            project.available_urls.turbowarp,
-                            "▶ Play with TurboWarp",
-                            "turbowarp"
-                        )}
+    <div id="unavailable-players"></div>
 
-                        ${createButton(
-                            project.available_urls.penguinmod,
-                            "🐧 Play with PenguinMod",
-                            "penguinmod"
-                        )}
-
-                        ${createButton(
-                            project.available_urls.snail,
-                            "🐌 Play with Snail-IDE",
-                            "snail"
-                        )}
-
-                        ${createButton(
-                            project.available_urls.compiled,
-                            "📦 Play the compiled version",
-                            "compiled"
-                        )}
-
-                    </div>
+</section>
 
                 </section>
 
@@ -403,9 +394,8 @@ async function loadProject() {
 function createButton(url, text, className) {
 
     if (!url) {
-
         return `
-            <span class="play-button ${className} disabled">
+            <span class="play-button unavailable-button">
                 ${text} — unavailable
             </span>
         `;
@@ -414,7 +404,7 @@ function createButton(url, text, className) {
     return `
         <a
             class="play-button ${className}"
-            href="${url}"
+            href="${escapeHTML(url)}"
             target="_blank"
             rel="noopener noreferrer"
         >
