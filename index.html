@@ -1,132 +1,478 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>L20412 Projects</title>
-<style>
-body { margin:0; font-family:Arial; background:#212121;color:white }
-header { background: #ff4c4c; color:white; padding:15px 25px; font-weight:bold; }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-.section { padding:20px; }
-h2 { margin-bottom:10px; }
+    <title>L20412's Projects</title>
 
-.scroll-container {
-    display:flex;
-    gap:15px;
-    overflow-x:auto;
-    padding-bottom:10px;
-}
+    <style>
+        :root {
+            --tw-red: #ff4c4c;
+            --background: #1e1e1e;
+            --card: #292929;
+            --card-hover: #333333;
+            --text: #ffffff;
+            --secondary: #bdbdbd;
+            --border: #3a3a3a;
+        }
 
-.card {
-    min-width:220px;
-    background:white;
-    border-radius:12px;
-    overflow:hidden;
-    box-shadow:0 2px 6px rgba(0,0,0,0.1);
-    flex-shrink:0;
-}
+        * {
+            box-sizing: border-box;
+        }
 
-.thumbnail {
-    width:100%;
-    height:140px;
-    object-fit:cover;
-    background:#ddd;
-}
+        body {
+            margin: 0;
+            background: var(--background);
+            color: var(--text);
+            font-family: "Helvetica Neue", Arial, sans-serif;
+        }
 
-.card-content { padding:10px; }
+        /* HEADER */
 
-.card a {
-    text-decoration:none;
-    color:#4d97ff;
-    font-weight:bold;
-}
+        header {
+            background: var(--tw-red);
+            height: 64px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+        }
 
-.coming {
-    min-width:220px;
-    background:#eee;
-    border-radius:12px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:#777;
-    font-style:italic;
-}
-</style>
+        .header-inner {
+            max-width: 1150px;
+            height: 100%;
+            margin: auto;
+            padding: 0 20px;
+
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .logo {
+            color: white;
+            font-size: 27px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            gap: 5px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 14px;
+            border-radius: 7px;
+        }
+
+        nav a:hover {
+            background: rgba(0, 0, 0, 0.15);
+        }
+
+        /* MAIN */
+
+        main {
+            max-width: 1150px;
+            margin: 35px auto;
+            padding: 0 20px;
+        }
+
+        .welcome {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 28px;
+            margin-bottom: 35px;
+        }
+
+        .welcome h1 {
+            margin: 0 0 8px;
+            font-size: 30px;
+        }
+
+        .welcome p {
+            margin: 0;
+            color: var(--secondary);
+        }
+
+        /* SECTION */
+
+        .section {
+            margin-bottom: 38px;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .section-header h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .section-header h2::before {
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 27px;
+            margin-right: 10px;
+            vertical-align: -4px;
+            border-radius: 4px;
+            background: var(--tw-red);
+        }
+
+        /* HORIZONTAL PROJECT LIST */
+
+        .project-list {
+            display: flex;
+            gap: 18px;
+            overflow-x: auto;
+            padding: 5px 4px 15px;
+            scrollbar-width: thin;
+        }
+
+        .project-list::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .project-list::-webkit-scrollbar-thumb {
+            background: #555;
+            border-radius: 10px;
+        }
+
+        /* PROJECT CARD */
+
+        .project-card {
+            flex: 0 0 245px;
+
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+
+            overflow: hidden;
+
+            transition:
+                transform 0.15s ease,
+                background 0.15s ease,
+                box-shadow 0.15s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-4px);
+            background: var(--card-hover);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .thumbnail {
+            display: block;
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            background: #111;
+            object-fit: cover;
+        }
+
+        .thumbnail-placeholder {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            color: #777;
+            background: #151515;
+        }
+
+        .project-info {
+            padding: 14px;
+        }
+
+        .project-title {
+            margin: 0 0 7px;
+            font-size: 18px;
+        }
+
+        .project-title a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .project-title a:hover {
+            color: var(--tw-red);
+        }
+
+        .project-description {
+            color: var(--secondary);
+            font-size: 14px;
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        .category {
+            display: inline-block;
+            margin-bottom: 9px;
+            padding: 4px 8px;
+
+            background: var(--tw-red);
+            color: white;
+
+            border-radius: 10px;
+
+            font-size: 11px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* EMPTY */
+
+        .coming-soon {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+
+            padding: 35px;
+            text-align: center;
+
+            color: var(--secondary);
+        }
+
+        .coming-soon-icon {
+            font-size: 38px;
+            margin-bottom: 8px;
+        }
+
+        .coming-soon h3 {
+            margin: 5px 0;
+            color: white;
+        }
+
+        /* FOOTER */
+
+        footer {
+            margin-top: 50px;
+            padding: 30px;
+
+            background: #151515;
+            border-top: 1px solid var(--border);
+
+            text-align: center;
+            color: #888;
+        }
+
+        @media (max-width: 650px) {
+            .header-inner {
+                gap: 10px;
+            }
+
+            .logo {
+                font-size: 22px;
+            }
+
+            nav a {
+                padding: 8px;
+                font-size: 13px;
+            }
+
+            .project-card {
+                flex-basis: 220px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-<header id="androidclosing"></header>
-    <script src="https://keepandroidopen.org/banner.js?id=androidclosing&hidebutton=off&link=https://ricktree.free.nf/keepandroidopen/"></script>
-<header>L20412's TurboWarp and Penguinmod Projects</header>
-<div class="section">
-<h1>
-🚨 Yes, this website has absolutely nothing to do with Android.
-</h1>
-<h3>
-However, Google just announced that starting in 2026/2027, they will force all Android app developers to submit personal identity details directly to them—even for apps outside the Play Store. This destroys developer privacy and independent ecosystems like F-Droid. I don't host APKs here, but corporate gatekeeping affects us all, so I’m spreading the word anyway. <a href="//ricktree.free.nf/keepandroidopen/">Learn more...</a>
-</h3>
 
-<h1>Welcome to my TurboWarp and Penguinmod projects section</h1>
-<p>I make cool projects and archive few other people's projects.</p>
+<header>
+    <div class="header-inner">
 
-<h2>📌 Pinned</h2>
-<div id="pinned" class="scroll-container"></div>
-</div>
+        <a class="logo" href="index.html">
+            L20412
+        </a>
 
-<div class="section">
-<h2>TurboWarp Projects</h2>
-<div id="turbowarp" class="scroll-container"></div>
-</div>
+        <nav>
+            <a href="#pinned">Pinned</a>
+            <a href="#turbowarp">TurboWarp</a>
+            <a href="#penguinmod">PenguinMod</a>
+            <a href="#otherpeople">Others</a>
+        </nav>
 
-<div class="section">
-<h2>Penguinmod Projects</h2>
-<div id="penguinmod" class="scroll-container"></div>
-</div>
+    </div>
+</header>
 
-<div class="section">
-<h2>Other users' projects</h2>
-<div id="others" class="scroll-container"></div>
-</div>
+
+<main>
+
+    <section class="welcome">
+        <h1>Projects by L20412</h1>
+        <p>
+            Explore my TurboWarp, PenguinMod, and other projects.
+        </p>
+    </section>
+
+
+    <div id="sections"></div>
+
+</main>
+
+
+<footer>
+    Projects by L20412
+</footer>
+
 
 <script>
-function createCard(project) {
-    return `
-        <div class="card">
-            <img class="thumbnail" src="${project.thumbnail || ''}">
-            <div class="card-content">
-                <a href="${project.link}" target="_blank">${project.title}</a>
-                ${
-                    project.extra
-                    ? `<small><a href="${project.extra.link}">${project.extra.label}</a></small>`
-                    : ''
-                }
+
+async function loadProjects() {
+
+    const response = await fetch("projects.json");
+    const projects = await response.json();
+
+    const sections = [
+        {
+            id: "pinned",
+            title: "Pinned Projects",
+            filter: project => project.pinned === true
+        },
+        {
+            id: "turbowarp",
+            title: "TurboWarp Projects",
+            filter: project => project.category === "turbowarp"
+        },
+        {
+            id: "penguinmod",
+            title: "PenguinMod Projects",
+            filter: project => project.category === "penguinmod"
+        },
+        {
+            id: "otherpeople",
+            title: "Other Projects",
+            filter: project => project.category === "otherpeople"
+        }
+    ];
+
+    const container = document.getElementById("sections");
+
+    for (const section of sections) {
+
+        const matchingProjects = projects.filter(section.filter);
+
+        const sectionElement = document.createElement("section");
+        sectionElement.className = "section";
+        sectionElement.id = section.id;
+
+        sectionElement.innerHTML = `
+            <div class="section-header">
+                <h2>${section.title}</h2>
             </div>
+        `;
+
+        if (matchingProjects.length === 0) {
+
+            sectionElement.innerHTML += `
+                <div class="coming-soon">
+                    <div class="coming-soon-icon">📦</div>
+                    <h3>Coming Soon!</h3>
+                    <p>No projects have been added here yet.</p>
+                </div>
+            `;
+
+        } else {
+
+            const list = document.createElement("div");
+            list.className = "project-list";
+
+            matchingProjects.forEach(project => {
+
+                const card = document.createElement("article");
+                card.className = "project-card";
+
+                const thumbnail = project.thumbnail
+                    ? `<img class="thumbnail"
+                            src="${project.thumbnail}"
+                            alt="${project.name} thumbnail"
+                            onerror="this.outerHTML='<div class=\\'thumbnail-placeholder\\'>No thumbnail</div>'">`
+                    : `<div class="thumbnail-placeholder">No thumbnail</div>`;
+
+                card.innerHTML = `
+                    <a href="metadata.html?project=${project.id}">
+                        ${thumbnail}
+                    </a>
+
+                    <div class="project-info">
+
+                        <span class="category">
+                            ${getCategoryName(project.category)}
+                        </span>
+
+                        <h3 class="project-title">
+                            <a href="metadata.html?project=${project.id}">
+                                ${escapeHTML(project.name)}
+                            </a>
+                        </h3>
+
+                        <p class="project-description">
+                            ${escapeHTML(project.description)}
+                        </p>
+
+                    </div>
+                `;
+
+                list.appendChild(card);
+            });
+
+            sectionElement.appendChild(list);
+        }
+
+        container.appendChild(sectionElement);
+    }
+}
+
+
+function getCategoryName(category) {
+
+    switch (category) {
+
+        case "turbowarp":
+            return "TurboWarp";
+
+        case "penguinmod":
+            return "PenguinMod";
+
+        case "otherpeople":
+            return "Other";
+
+        default:
+            return "Project";
+    }
+}
+
+
+function escapeHTML(text) {
+
+    const div = document.createElement("div");
+    div.textContent = text;
+
+    return div.innerHTML;
+}
+
+
+loadProjects().catch(error => {
+
+    document.getElementById("sections").innerHTML = `
+        <div class="coming-soon">
+            <h3>Unable to load projects</h3>
+            <p>Make sure projects.json is available.</p>
         </div>
     `;
-}
 
-function loadSection(id, projects) {
-    const container = document.getElementById(id);
+    console.error(error);
+});
 
-    if (!projects || projects.length === 0) {
-        container.innerHTML = `<div class="coming">Coming Soon</div>`;
-        return;
-    }
-
-    container.innerHTML = projects.map(createCard).join('');
-}
-
-fetch("projects.json")
-    .then(res => res.json())
-    .then(data => {
-        loadSection("pinned", data.pinned);
-        loadSection("turbowarp", data.turbowarp);
-        loadSection("penguinmod", data.penguinmod);
-        loadSection("others", data.others);
-    })
-    .catch(err => {
-        console.error("Failed to load JSON:", err);
-    });
 </script>
+
 </body>
 </html>

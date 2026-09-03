@@ -1,50 +1,86 @@
-{
-  "pinned": [
-    {
-      "title": "[G] Whack-a-Dango",
-      "link": "https://turbowarp.org/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/turbowarp/whackadango.sb3",
-      "thumbnail": "tb/whackadango.png"
-    },
-    {
-      "title": "[G] Business Tycoon",
-      "link": "https://turbowarp.org/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/turbowarp/businesstycoon.sb3",
-      "thumbnail": "tb/businesstycoon.png"
+[
+  {
+    "id": 1,
+    "name": "Whack-a-Dango",
+    "description": "placeholder description",
+    "category": "turbowarp",
+    "thumbnail": "tb/whackadango.png",
+    "pinned": true,
+    "available_urls": {
+      "turbowarp": "https://turbowarp.org/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/turbowarp/whackadango.sb3",
+      "penguinmod": "https://studio.penguinmod.com/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/turbowarp/whackadango.sb3",
+      "snail": "https://snail-ide.js.org/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/turbowarp/whackadango.sb3",
+      "compiled": ""
     }
-  ],
-  "turbowarp": [
-    {
-      "title": "[G] Whack-a-Dango",
-      "link": "https://turbowarp.org/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/turbowarp/whackadango.sb3",
-      "thumbnail": "tb/whackadango.png"
-    },
-    {
-      "title": "[G] Business Tycoon",
-      "link": "https://turbowarp.org/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/turbowarp/businesstycoon.sb3",
-      "thumbnail": "tb/businesstycoon.png"
-    },
-    {
-      "title": "[A] Looping the rooms",
-      "link": "https://turbowarp.org/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/turbowarp/loopingtherooms.sb3",
-      "thumbnail": "tb/loopingtherooms.png"
+  },
+  {
+    "id": 2,
+    "name": "Business Tycoon",
+    "description": "placeholder description",
+    "category": "turbowarp",
+    "thumbnail": "tb/businesstycoon.png",
+    "pinned": true,
+    "available_urls": {
+      "turbowarp": "https://turbowarp.org/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/turbowarp/businesstycoon.sb3",
+      "penguinmod": "https://studio.penguinmod.com/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/turbowarp/businesstycoon.sb3",
+      "snail": "https://snail-ide.js.org/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/turbowarp/businesstycoon.sb3",
+      "compiled": ""
     }
-  ],
-  "penguinmod": [
-    {
-      "title": "[P] YMate",
-      "link": "https://studio.penguinmod.com/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/penguinmod/ytd.pmp",
-      "thumbnail": "tb/ytd.png"
+  },
+  {
+    "id": 3,
+    "name": "Looping the rooms",
+    "description": "placeholder description",
+    "category": "turbowarp",
+    "thumbnail": "tb/loopingtherooms.png",
+    "pinned": false,
+    "available_urls": {
+      "turbowarp": "https://turbowarp.org/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/turbowarp/loopingtherooms.sb3",
+      "penguinmod": "https://studio.penguinmod.com/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/turbowarp/loopingtherooms.sb3",
+      "snail": "https://snail-ide.js.org/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/turbowarp/loopingtherooms.sb3",
+      "compiled": ""
     }
-  ],
-  "others": [
-    {
-      "title": "[P] Windows 10 vector",
-      "link": "https://studio.penguinmod.com/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/penguinmod/win10vector.pmp",
-      "thumbnail": "tb/win10vector.png"
-    },
-    {
-      "title": "[G] Touch Grass Simulator",
-      "link": "https://studio.penguinmod.com/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/penguinmod/touchgrasssimulatorv6.pmp",
-      "thumbnail": "tb/touchgrasssimulatorv6.png"
+  },
+  {
+    "id": 4,
+    "name": "YMate",
+    "description": "placeholder description",
+    "category": "penguinmod",
+    "thumbnail": "tb/ytd.png",
+    "pinned": false,
+    "available_urls": {
+      "turbowarp": "",
+      "penguinmod": "https://studio.penguinmod.com/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/penguinmod/ytd.pmp",
+      "snail": "",
+      "compiled": ""
     }
-  ]
-}
+  },
+  {
+    "id": 5,
+    "name": "Windows 10 vector",
+    "description": "placeholder description",
+    "category": "otherpeople",
+    "thumbnail": "tb/win10vector.png",
+    "pinned": false,
+    "available_urls": {
+      "turbowarp": "",
+      "penguinmod": "https://studio.penguinmod.com/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/penguinmod/win10vector.pmp",
+      "snail": "",
+      "compiled": ""
+    }
+  },
+  {
+    "id": 6,
+    "name": "Touch Grass Simulator",
+    "description": "placeholder description",
+    "category": "otherpeople",
+    "thumbnail": "tb/touchgrasssimulatorv6.png",
+    "pinned": false,
+    "available_urls": {
+      "turbowarp": "",
+      "penguinmod": "https://studio.penguinmod.com/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/penguinmod/touchgrasssimulatorv6.pmp",
+      "snail": "",
+      "compiled": ""
+    }
+  }
+]

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Project</title>
+
+    <style>
+
+        :root {
+            --tw-red: #ff4c4c;
+            --background: #1e1e1e;
+            --card: #292929;
+            --card-hover: #333333;
+            --text: #ffffff;
+            --secondary: #bdbdbd;
+            --border: #3a3a3a;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: var(--background);
+            color: var(--text);
+            font-family: "Helvetica Neue", Arial, sans-serif;
+        }
+
+        /* HEADER */
+
+        header {
+            background: var(--tw-red);
+            height: 64px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+        }
+
+        .header-inner {
+            max-width: 1000px;
+            height: 100%;
+            margin: auto;
+            padding: 0 20px;
+
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            text-decoration: none;
+            font-size: 27px;
+            font-weight: bold;
+        }
+
+        /* MAIN */
+
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .back {
+            display: inline-block;
+            margin-bottom: 20px;
+
+            color: var(--secondary);
+            text-decoration: none;
+        }
+
+        .back:hover {
+            color: white;
+        }
+
+        .project {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .project-top {
+            display: grid;
+            grid-template-columns: 420px 1fr;
+        }
+
+        .thumbnail-container {
+            background: #111;
+        }
+
+        .thumbnail {
+            width: 100%;
+            height: 100%;
+            min-height: 315px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .thumbnail-placeholder {
+            min-height: 315px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            color: #777;
+        }
+
+        .info {
+            padding: 30px;
+        }
+
+        .category {
+            display: inline-block;
+
+            padding: 5px 10px;
+            margin-bottom: 12px;
+
+            border-radius: 12px;
+
+            background: var(--tw-red);
+            color: white;
+
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: 0 0 12px;
+            font-size: 32px;
+        }
+
+        .description {
+            color: var(--secondary);
+            line-height: 1.6;
+        }
+
+        .project-id {
+            color: #777;
+            font-size: 13px;
+        }
+
+        /* PLAY BUTTONS */
+
+        .players {
+            padding: 25px 30px 30px;
+            border-top: 1px solid var(--border);
+        }
+
+        .players h2 {
+            margin: 0 0 15px;
+            font-size: 21px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .play-button {
+            display: inline-block;
+
+            padding: 12px 16px;
+
+            border-radius: 7px;
+
+            color: white;
+            text-decoration: none;
+
+            font-weight: bold;
+
+            transition:
+                transform 0.1s ease,
+                filter 0.1s ease;
+        }
+
+        .play-button:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.1);
+        }
+
+        .turbowarp {
+            background: #ff4c4c;
+        }
+
+        .penguinmod {
+            background: #9966ff;
+        }
+
+        .snail {
+            background: #42a5f5;
+        }
+
+        .compiled {
+            background: #555;
+        }
+
+        .disabled {
+            background: #3b3b3b;
+            color: #777;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        /* ERROR */
+
+        .error {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+
+            padding: 40px;
+            text-align: center;
+        }
+
+        .error h1 {
+            color: var(--tw-red);
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 750px) {
+
+            .project-top {
+                grid-template-columns: 1fr;
+            }
+
+            .thumbnail {
+                min-height: auto;
+                aspect-ratio: 4 / 3;
+            }
+
+            .thumbnail-placeholder {
+                min-height: auto;
+                aspect-ratio: 4 / 3;
+            }
+
+            h1 {
+                font-size: 27px;
+            }
+
+            .play-button {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-inner">
+        <a class="logo" href="index.html">L20412</a>
+    </div>
+</header>
+
+
+<main>
+
+    <a class="back" href="index.html">
+        ← Back to projects
+    </a>
+
+    <div id="content"></div>
+
+</main>
+
+
+<script>
+
+async function loadProject() {
+
+    const params = new URLSearchParams(window.location.search);
+    const projectId = Number(params.get("project"));
+
+    const content = document.getElementById("content");
+
+    if (!Number.isInteger(projectId)) {
+        showError("Invalid project ID.");
+        return;
+    }
+
+    try {
+
+        const response = await fetch("projects.json");
+
+        if (!response.ok) {
+            throw new Error("Could not load projects.json");
+        }
+
+        const projects = await response.json();
+
+        const project = projects.find(
+            project => project.id === projectId
+        );
+
+        if (!project) {
+            showError("Project not found.");
+            return;
+        }
+
+        document.title = `${project.name} - L20412`;
+
+        const thumbnail = project.thumbnail
+            ? `
+                <img
+                    class="thumbnail"
+                    src="${project.thumbnail}"
+                    alt="${escapeHTML(project.name)} thumbnail"
+                >
+              `
+            : `
+                <div class="thumbnail-placeholder">
+                    No thumbnail
+                </div>
+              `;
+
+        content.innerHTML = `
+
+            <article class="project">
+
+                <div class="project-top">
+
+                    <div class="thumbnail-container">
+                        ${thumbnail}
+                    </div>
+
+                    <div class="info">
+
+                        <span class="category">
+                            ${getCategoryName(project.category)}
+                        </span>
+
+                        <h1>
+                            ${escapeHTML(project.name)}
+                        </h1>
+
+                        <p class="description">
+                            ${escapeHTML(project.description)}
+                        </p>
+
+                        <p class="project-id">
+                            Project ID: ${project.id}
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <section class="players">
+
+                    <h2>Play this project</h2>
+
+                    <div class="buttons">
+
+                        ${createButton(
+                            project.available_urls.turbowarp,
+                            "▶ Play with TurboWarp",
+                            "turbowarp"
+                        )}
+
+                        ${createButton(
+                            project.available_urls.penguinmod,
+                            "🐧 Play with PenguinMod",
+                            "penguinmod"
+                        )}
+
+                        ${createButton(
+                            project.available_urls.snail,
+                            "🐌 Play with Snail-IDE",
+                            "snail"
+                        )}
+
+                        ${createButton(
+                            project.available_urls.compiled,
+                            "📦 Play the compiled version",
+                            "compiled"
+                        )}
+
+                    </div>
+
+                </section>
+
+            </article>
+        `;
+
+    } catch (error) {
+
+        console.error(error);
+
+        showError("Unable to load project information.");
+    }
+}
+
+
+function createButton(url, text, className) {
+
+    if (!url) {
+
+        return `
+            <span class="play-button ${className} disabled">
+                ${text} — unavailable
+            </span>
+        `;
+    }
+
+    return `
+        <a
+            class="play-button ${className}"
+            href="${url}"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            ${text}
+        </a>
+    `;
+}
+
+
+function getCategoryName(category) {
+
+    switch (category) {
+
+        case "turbowarp":
+            return "TurboWarp";
+
+        case "penguinmod":
+            return "PenguinMod";
+
+        case "otherpeople":
+            return "Other";
+
+        default:
+            return "Project";
+    }
+}
+
+
+function escapeHTML(text) {
+
+    const div = document.createElement("div");
+    div.textContent = text;
+
+    return div.innerHTML;
+}
+
+
+function showError(message) {
+
+    document.getElementById("content").innerHTML = `
+        <div class="error">
+            <h1>Oops!</h1>
+            <p>${message}</p>
+        </div>
+    `;
+}
+
+
+loadProject();
+
+</script>
+
+</body>
+</html>
