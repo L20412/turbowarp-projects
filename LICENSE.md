@@ -23,7 +23,7 @@ While Scratch, TurboWarp, and PenguinMod use open-source engines, the projects h
 
 * **Business Tycoon**
 
-For projects marked **All Rights Reserved — Source-Available**, the source may be inspected, but no permission is granted to copy, modify, redistribute, or create derivative works unless otherwise stated.
+For projects marked **All Rights Reserved — Source-Available**, the source may be inspected or downloaded for offline use, but no permission is granted to copy, modify, redistribute, or create derivative works unless otherwise stated.
 
 ---
 
