@@ -91,7 +91,7 @@
     "thumbnail": "tb/scratchet.png",
     "pinned": false,
     "available_urls": {
-      "turbowarp": "",
+      "turbowarp": "https://turbowarp.org/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/scratch/scratchet.sb3",
       "penguinmod": "https://studio.penguinmod.com/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/scratch/scratchet.sb3",
       "snail": "",
       "compiled": ""
