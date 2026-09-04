@@ -96,5 +96,19 @@
       "snail": "",
       "compiled": ""
     }
+  },
+  {
+    "id": 8,
+    "name": "Bad Apple",
+    "description": "It's just Bad Apple isn't it?",
+    "category": "turbowarp",
+    "thumbnail": "tb/badapple.png",
+    "pinned": false,
+    "available_urls": {
+      "turbowarp": "https://turbowarp.org/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/turbowarp/badapple.sb3",
+      "penguinmod": "https://studio.penguinmod.com/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/turbowarp/badapple.sb3",
+      "snail": "",
+      "compiled": ""
+    }
   }
 ]
