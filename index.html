@@ -338,6 +338,7 @@
 async function loadProjects() {
 
     const response = await fetch("projects.json");
+    projects.sort((a, b) => b.id - a.id);
     const projects = await response.json();
 
     const sections = [
