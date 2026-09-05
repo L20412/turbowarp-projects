@@ -16,7 +16,7 @@
   {
     "id": 2,
     "name": "Business Tycoon",
-    "description": "<p>Welcome to the most relatable tech‑company survival sim you didn’t know you needed. </p><p>Build software, hire staff, manage expenses, and try to keep your company alive for as many days as possible — because in this world, your real score isn’t money… it’s survival.</p>",
+    "description": "<div>Welcome to the most relatable tech‑company survival sim you didn’t know you needed. </div><div>Build software, hire staff, manage expenses, and try to keep your company alive for as many days as possible — because in this world, your real score isn’t money… it’s survival.</div>",
     "category": "turbowarp",
     "thumbnail": "tb/businesstycoon.png",
     "pinned": true,
@@ -58,7 +58,7 @@
   {
     "id": 5,
     "name": "Windows 10 vector",
-    "description": "<p>Welcome to possibly the first only vector operating system in PenguinMod.</p><p>This simulator allows you to use PenguinMod inside PenguinMod, create a document, use virtualization software, and even use a Windows 7 like theme found in Settings.</p>",
+    "description": "<div>Welcome to possibly the first only vector operating system in PenguinMod.</div><div>This simulator allows you to use PenguinMod inside PenguinMod, create a document, use virtualization software, and even use a Windows 7 like theme found in Settings.</div>",
     "category": "otherpeople",
     "thumbnail": "tb/win10vector.png",
     "pinned": false,
@@ -72,7 +72,7 @@
   {
     "id": 6,
     "name": "Touch Grass Simulator",
-    "description": "<p>you’ve been inside for 10 years. your eyes hurt. your skin glows like printer paper. it’s time... to touch grass.</p><p></p><p>experience the life-changing journey of breathing fresh air, making friends, and slapping your fingers on that green stuff. upgrade your power, unlock freedom, dodge annoying complaints, and maybe... just maybe... become normal again.</p><p>touch grass. before it’s too late</p><p></p><p>(The original user's Discord account was hacked)</p>",
+    "description": "<div>you’ve been inside for 10 years. your eyes hurt. your skin glows like printer paper. it’s time... to touch grass.</div><div></div><div>experience the life-changing journey of breathing fresh air, making friends, and slapping your fingers on that green stuff. upgrade your power, unlock freedom, dodge annoying complaints, and maybe... just maybe... become normal again.</div><div>touch grass. before it’s too late</div><div></div><div>(The original user's Discord account was hacked)</div>",
     "category": "otherpeople",
     "thumbnail": "tb/touchgrasssimulatorv6.png",
     "pinned": false,
@@ -86,7 +86,7 @@
   {
     "id": 7,
     "name": "Scratchet",
-    "description": "<p>Meet Scratchet- your very own desktop companion and </p><p></p><p>best friend! It will be your very own assistant - ask you questions, know your choices, help you through your desktop and also give you advice if u need some. But the story takes a turn when you find out that it is a virus in disguise. You figure out certain clues to end up choosing one of the escape files from the two options... It's your luck that will decide that whether you will be able to escape or Scratchet will be your best friend forever.... </p><p></p><p>(The project was removed from Scratch because it contains information that asks for PII information which won't be sent anywhere)</p>",
+    "description": "<div>Meet Scratchet- your very own desktop companion and </div><div></div><div>best friend! It will be your very own assistant - ask you questions, know your choices, help you through your desktop and also give you advice if u need some. But the story takes a turn when you find out that it is a virus in disguise. You figure out certain clues to end up choosing one of the escape files from the two options... It's your luck that will decide that whether you will be able to escape or Scratchet will be your best friend forever.... </div><div></div><div>(The project was removed from Scratch because it contains information that asks for PII information which won't be sent anywhere)</div>",
     "category": "otherpeople",
     "thumbnail": "tb/scratchet.png",
     "pinned": false,
