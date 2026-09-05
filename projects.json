@@ -86,7 +86,7 @@
   {
     "id": 7,
     "name": "Scratchet",
-    "description": "Meet Scratchet- your very own desktop companion and \n\nbest friend! It will be your very own assistant - ask you questions, know your choices, help you through your desktop and also give you advice if u need some. But the story takes a turn when you find out that it is a virus in disguise. You figure out certain clues to end up choosing one of the escape files from the two options... It's your luck that will decide that whether you will be able to escape or Scratchet will be your best friend forever.... \n(The project was removed from Scratch because it contains information that asks for PII information which won't be sent anywhere)",
+    "description": "Meet Scratchet- your very own desktop companion and <br><br>best friend! It will be your very own assistant - ask you questions, know your choices, help you through your desktop and also give you advice if u need some. But the story takes a turn when you find out that it is a virus in disguise. You figure out certain clues to end up choosing one of the escape files from the two options... It's your luck that will decide that whether you will be able to escape or Scratchet will be your best friend forever.... \n(The project was removed from Scratch because it contains information that asks for PII information which won't be sent anywhere)",
     "category": "otherpeople",
     "thumbnail": "tb/scratchet.png",
     "pinned": false,
@@ -114,7 +114,7 @@
   {
     "id": 9,
     "name": "Sticks fight website",
-    "description": "A recreation of sticksfight.com page that used to run on Flash.",
+    "description": "A recreation of sticksfight.com page that used to run on Flash. <b>Compiled version recommended!</b>",
     "category": "turbowarp",
     "thumbnail": "tb/sticksfightwebsite.png",
     "pinned": false,
