@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Whack-a-Dango",
-    "description": "placeholder description",
+    "description": "Just a simple whack-a-mole game but it's TurboWarp dangos",
     "category": "turbowarp",
     "thumbnail": "tb/whackadango.png",
     "pinned": true,
@@ -16,7 +16,7 @@
   {
     "id": 2,
     "name": "Business Tycoon",
-    "description": "Welcome to the most relatable tech‑company survival sim you didn’t know you needed. \nBuild software, hire staff, manage expenses, and try to keep your company alive for as many days as possible — because in this world, your real score isn’t money… it’s survival.",
+    "description": "<p>Welcome to the most relatable tech‑company survival sim you didn’t know you needed. </p><p>Build software, hire staff, manage expenses, and try to keep your company alive for as many days as possible — because in this world, your real score isn’t money… it’s survival.</p>",
     "category": "turbowarp",
     "thumbnail": "tb/businesstycoon.png",
     "pinned": true,
@@ -44,7 +44,7 @@
   {
     "id": 4,
     "name": "YMate",
-    "description": "placeholder description",
+    "description": "I don't know...",
     "category": "penguinmod",
     "thumbnail": "tb/ytd.png",
     "pinned": false,
@@ -58,7 +58,7 @@
   {
     "id": 5,
     "name": "Windows 10 vector",
-    "description": "placeholder description",
+    "description": "<p>Welcome to possibly the first only vector operating system in PenguinMod.</p><p>This simulator allows you to use PenguinMod inside PenguinMod, create a document, use virtualization software, and even use a Windows 7 like theme found in Settings.</p>",
     "category": "otherpeople",
     "thumbnail": "tb/win10vector.png",
     "pinned": false,
@@ -72,7 +72,7 @@
   {
     "id": 6,
     "name": "Touch Grass Simulator",
-    "description": "you’ve been inside for 10 years. your eyes hurt. your skin glows like printer paper. it’s time... to touch grass.\nexperience the life-changing journey of breathing fresh air, making friends, and slapping your fingers on that green stuff. upgrade your power, unlock freedom, dodge annoying complaints, and maybe... just maybe... become normal again.\ntouch grass. before it’s too late",
+    "description": "<p>you’ve been inside for 10 years. your eyes hurt. your skin glows like printer paper. it’s time... to touch grass.</p><p></p><p>experience the life-changing journey of breathing fresh air, making friends, and slapping your fingers on that green stuff. upgrade your power, unlock freedom, dodge annoying complaints, and maybe... just maybe... become normal again.</p><p>touch grass. before it’s too late</p><p></p><p>(The original user's Discord account was hacked)</p>",
     "category": "otherpeople",
     "thumbnail": "tb/touchgrasssimulatorv6.png",
     "pinned": false,
@@ -86,7 +86,7 @@
   {
     "id": 7,
     "name": "Scratchet",
-    "description": "Meet Scratchet- your very own desktop companion and <br><br>best friend! It will be your very own assistant - ask you questions, know your choices, help you through your desktop and also give you advice if u need some. But the story takes a turn when you find out that it is a virus in disguise. You figure out certain clues to end up choosing one of the escape files from the two options... It's your luck that will decide that whether you will be able to escape or Scratchet will be your best friend forever.... \n(The project was removed from Scratch because it contains information that asks for PII information which won't be sent anywhere)",
+    "description": "<p>Meet Scratchet- your very own desktop companion and </p><p></p><p>best friend! It will be your very own assistant - ask you questions, know your choices, help you through your desktop and also give you advice if u need some. But the story takes a turn when you find out that it is a virus in disguise. You figure out certain clues to end up choosing one of the escape files from the two options... It's your luck that will decide that whether you will be able to escape or Scratchet will be your best friend forever.... </p><p></p><p>(The project was removed from Scratch because it contains information that asks for PII information which won't be sent anywhere)</p>",
     "category": "otherpeople",
     "thumbnail": "tb/scratchet.png",
     "pinned": false,
