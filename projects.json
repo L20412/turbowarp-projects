@@ -86,7 +86,7 @@
   {
     "id": 7,
     "name": "Scratchet",
-    "description": "<div>Meet Scratchet- your very own desktop companion and </div><div></div><div>best friend! It will be your very own assistant - ask you questions, know your choices, help you through your desktop and also give you advice if u need some. But the story takes a turn when you find out that it is a virus in disguise. You figure out certain clues to end up choosing one of the escape files from the two options... It's your luck that will decide that whether you will be able to escape or Scratchet will be your best friend forever.... </div><div></div><div>(The project was removed from Scratch because it contains information that asks for PII information which won't be sent anywhere)</div>",
+    "description": "<div>Meet Scratchet- your very own desktop companion and </div><div></div><div>best friend! It will be your very own assistant - ask you questions, know your choices, help you through your desktop and also give you advice if u need some. But the story takes a turn when you find out that it is a virus in disguise. You figure out certain clues to end up choosing one of the escape files from the two options... It's your luck that will decide that whether you will be able to escape or Scratchet will be your best friend forever.... </div><div></div><div><b>(The project was removed from Scratch because it asks for PII information which won't be sent anywhere such as \"$/ IS THAT YOUR REAL NAME????\", \"Are you comfortable showing me your face..?\", etc. The project is inspectable through \"See inside\" for transparency reasons)</b></div>",
     "category": "otherpeople",
     "thumbnail": "tb/scratchet.png",
     "pinned": false,
