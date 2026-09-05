@@ -110,5 +110,19 @@
       "snail": "",
       "compiled": "https://l20412.github.io/turbowarp-projects/compiled/8.html"
     }
+  },
+  {
+    "id": 9,
+    "name": "Sticks fight website",
+    "description": "A recreation of sticksfight.com page that used to run on Flash.",
+    "category": "turbowarp",
+    "thumbnail": "tb/sticksfightwebsite.png",
+    "pinned": false,
+    "available_urls": {
+      "turbowarp": "https://turbowarp.org/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/turbowarp/sticksfightwebsite.sb3",
+      "penguinmod": "https://studio.penguinmod.com/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/turbowarp/sticksfightwebsite.sb3",
+      "snail": "",
+      "compiled": "https://l20412.github.io/turbowarp-projects/compiled/9.html"
+    }
   }
 ]
