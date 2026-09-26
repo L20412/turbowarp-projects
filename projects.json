@@ -124,5 +124,19 @@
       "snail": "",
       "compiled": "https://l20412.github.io/turbowarp-projects/compiled/9.html"
     }
+  },
+  {
+    "id": 10,
+    "name": "Doki Doki Penguin",
+    "description": "It's nothing, really.",
+    "category": "penguinmod",
+    "thumbnail": "",
+    "pinned": false,
+    "available_urls": {
+      "turbowarp": "",
+      "penguinmod": "https://studio.penguinmod.com/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/turbowarp/DDPenguin.sb3",
+      "snail": "",
+      "compiled": ""
+    }
   }
 ]
