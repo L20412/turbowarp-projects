@@ -138,5 +138,19 @@
       "snail": "",
       "compiled": "https://l20412.github.io/turbowarp-projects/compiled/10.html"
     }
+  },
+  {
+    "id": 11,
+    "name": "Friendly Father",
+    "description": "Oh please don't I'm serious!",
+    "category": "penguinmod",
+    "thumbnail": "tb/placeholder.png",
+    "pinned": false,
+    "available_urls": {
+      "turbowarp": "https://turbowarp.org/?project_url=https://raw.githubusercontent.com/L20412/turbowarp-projects/refs/heads/main/turbowarp/friendlyfather.sb3",
+      "penguinmod": "",
+      "snail": "",
+      "compiled": ""
+    }
   }
 ]
